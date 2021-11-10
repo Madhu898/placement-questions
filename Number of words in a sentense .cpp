@@ -1,3 +1,13 @@
+/*
+input =         
+        enter an line :
+        you should be the good at coding
+        
+output=
+       the number of words are 7
+*/
+
+
 #include <iostream>
 #include <string>
 using namespace std;
