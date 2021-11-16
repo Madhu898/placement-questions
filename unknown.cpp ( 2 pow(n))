@@ -1,0 +1,35 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        int64_t n, m, sum, temp = 0;
+        cin >> n;
+        m = pow(2, n);
+        sum = m;
+        if (sum < 10)
+        {
+            cout << sum << endl;
+        }
+        else
+        {
+            while (sum >= 10)
+            {
+                temp = sum;
+                sum = 0;
+                while (temp > 0)
+                {
+                    int rem = temp % 10;
+                    sum = sum + rem;
+                    temp = temp / 10;
+                }
+            }
+            cout << sum << endl;
+        }
+    }
+
+    return 0;
+}
