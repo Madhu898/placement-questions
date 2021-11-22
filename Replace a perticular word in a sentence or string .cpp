@@ -13,8 +13,8 @@ using namespace std;
 int main()
 {
     system("cls");
-    string s,sub,rep;    
-    getline(cin,s);
+    string s,sub,rep;    // sub = the word that you want to replace in a sentence i.e substring of a line 
+    getline(cin,s);      //rep = the replacing word
     cin>>sub>>rep;
     s.replace(s.find(sub),sub.length(),rep);
     cout<<s<<endl;    
