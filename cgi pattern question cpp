@@ -1,0 +1,13 @@
+n =int(input())
+temp_number = (n*n)+n
+counter = 1
+for i in range(n):
+	temp_list = []
+	for j in range(n-i):
+		temp_list.append(counter)
+		temp_list.append(temp_number-counter+1)
+		counter += 1
+	temp_list.sort()
+	temp_list = [str(each) for each in temp_list]
+	[print("--", end="") for k in range(i)]
+	print("*".join(temp_list))
